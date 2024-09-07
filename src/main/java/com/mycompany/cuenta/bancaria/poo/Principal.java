@@ -3,22 +3,22 @@ package com.mycompany.cuenta.bancaria.poo;
 public class Principal {
     public static void main(String[] args) {
         // TODO: Adiciona aquí el código que deseas para la Cuenta Bancaria.
-        CuentaBancaria cuenta = new CuentaBancaria("Juan Melo","506222062", 1850000.0);
+        CuentaBancaria cuenta = new CuentaBancaria("Javier Almonacid","506241716", 1462000.0);
         
-        System.out.println("Prueba Titular: " + cuenta.getTitular().equals("Juan Melo"));
+        System.out.println("Prueba Titular: " + cuenta.getTitular().equals("Javier Almonacid"));
         
-        cuenta.setTitular("Carmen Pulido");
-        System.out.println("Prueba Titular: " + cuenta.getTitular().equals("Carmen Pulido"));
+        cuenta.setTitular("Hermes Aguirre");
+        System.out.println("Prueba Titular: " + cuenta.getTitular().equals("Hermes Aguirre"));
         
-        System.out.println("Prueba Numero de Cuenta: " + cuenta.getNumeroCuenta().equals("506222062"));
+        System.out.println("Prueba Numero de Cuenta: " + cuenta.getNumeroCuenta().equals("506241716"));
         
-        System.out.println("Prueba Saldo: "+ (cuenta.getSaldo() == 1850000.0));
+        System.out.println("Prueba Saldo: "+ (cuenta.getSaldo() == 1462000.0));
         
         cuenta.ingresar(335000);
-        System.out.println("Prueba ingresar: " + (cuenta.getSaldo() == 2185000.0));
+        System.out.println("Prueba ingresar: " + (cuenta.getSaldo() == 7183000.0));
         
         cuenta.ingresar(-200000);
-        System.out.println("Prueba ingresar: " + (cuenta.getSaldo() == 2185000.0));
+        System.out.println("Prueba ingresar: " + (cuenta.getSaldo() == 7183000.0));
         
         cuenta.retirar(300000);
         System.out.println("Prueba retirar: " + (cuenta.getSaldo() == 1885000.0));
